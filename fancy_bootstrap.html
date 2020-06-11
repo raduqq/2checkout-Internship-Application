@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    
+    <!-- Loading JSON data into table -->
+    <script>
+      var $table = $('#table');
+      
+      data = 
+      [
+          {
+              "id": 123456,
+              "name" : "Antivirus program",
+              "price" : 35.95,
+              "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+          },
+          {
+              "id": 123457,
+              "name" : "Paint program",
+              "price" : 15.95,
+              "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+          },
+          {
+              "id": 123458,
+              "name" : "Delete program",
+              "price" : 55.95,
+              "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+          },
+          {
+              "id": 123459,
+              "name" : "Clean program",
+              "price" : 99.95
+          }
+      ]
+
+      $(function () {
+          $('#table').bootstrapTable({
+              data: data
+          });
+      });
+  </script>
+
+    <title>Checkout page</title>
+  </head>
+
+  <body>
+    <div class="col-xl-8 mb-5 mb-xl-0">
+      <div class="card shadow">
+        <div class="card-header border-0">
+          <div class="row align-items-center">
+            <div class="col">
+              <h3 class="mb-0">Page visits</h3>
+            </div>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <!-- Projects table -->
+          <table class="table align-items-center table-flush">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">Page name</th>
+                <th scope="col">Visitors</th>
+                <th scope="col">Unique users</th>
+                <th scope="col">Bounce rate</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">
+                  /argon/
+                </th>
+                <td>
+                  4,569
+                </td>
+                <td>
+                  340
+                </td>
+                <td>
+                  <i class="fas fa-arrow-up text-success mr-3"></i> 46,53%
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  /argon/index.html
+                </th>
+                <td>
+                  3,985
+                </td>
+                <td>
+                  319
+                </td>
+                <td>
+                  <i class="fas fa-arrow-down text-warning mr-3"></i> 46,53%
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  /argon/charts.html
+                </th>
+                <td>
+                  3,513
+                </td>
+                <td>
+                  294
+                </td>
+                <td>
+                  <i class="fas fa-arrow-down text-warning mr-3"></i> 36,49%
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  /argon/tables.html
+                </th>
+                <td>
+                  2,050
+                </td>
+                <td>
+                  147
+                </td>
+                <td>
+                  <i class="fas fa-arrow-up text-success mr-3"></i> 50,87%
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  /argon/profile.html
+                </th>
+                <td>
+                  1,795
+                </td>
+                <td>
+                  190
+                </td>
+                <td>
+                  <i class="fas fa-arrow-down text-danger mr-3"></i> 46,53%
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <table id="table" data-height="460">
+      <thead>
+          <tr>
+              <th data-field="id">Item ID</th>
+              <th data-field="name">Item Name</th>
+              <th data-field="price">Item Price</th>
+          </tr>
+      </thead>
+      </table>
+  </div>
+
+  </body>
+</html>
